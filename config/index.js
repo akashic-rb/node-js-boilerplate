@@ -1,4 +1,4 @@
-import MONGO from "./mongo"
+const MONGO = require("./mongo")
 
 const SERVER_HOSTNAME = process.env.SERVER_HOSTNAME || "http://localhost"
 const SERVER_PORT = process.env.PORT || 8000
@@ -8,7 +8,7 @@ const SERVER = {
     port: SERVER_PORT
 }
 
-export default {
+module.exports = {
     mongo: MONGO,
     server: SERVER
 }

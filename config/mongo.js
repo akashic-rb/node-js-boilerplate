@@ -18,7 +18,7 @@ const options = {
 
 }
 
-export default {
+module.exports = {
     host: MONGO_HOST,
     username: MONGO_USERNAME,
     password: MONGO_PASSWORD,
